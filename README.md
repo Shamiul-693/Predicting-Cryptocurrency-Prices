@@ -12,19 +12,10 @@ To download the dataset, follow these steps:
 
 1. **From GitHub Website**:
    - Go to the `datasets` directory in this repository.
-   - Click on the dataset CSV file (e.g., `cryptocurrency_data.csv`).
+   - Click on the dataset CSV file (e.g., `bitcoin.csv`).
+   - Click on the dataset CSV file (e.g., `ethereum.csv`).
    - Once the file opens, click on the "Download" button (or right-click on "Raw" and choose "Save Link As...") to save the file to your local machine.
 
-2. **Using Git Command Line**:
-   - Clone the repository:
-     ```bash
-     git clone https://github.com/yourusername/crypto-price-prediction.git
-     ```
-   - Navigate to the `datasets` directory:
-     ```bash
-     cd crypto-price-prediction/datasets
-     ```
-   - The dataset CSV file (e.g., `cryptocurrency_data.csv`) will be available in the `datasets` directory after cloning.
 
 ### Example Code to Load the Dataset
 
@@ -34,7 +25,7 @@ You can load the CSV dataset into your Python script using **pandas** as shown b
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv('datasets/cryptocurrency_data.csv')
-
+df_bitcoin = pd.read_csv('datasets/Bitcoin.csv')
+df_eth = pd.read_csv('datasets/ethereum.csv')
 # Display the first few rows of the dataset
 print(df.head())
